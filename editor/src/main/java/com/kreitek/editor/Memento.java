@@ -1,15 +1,15 @@
 package com.kreitek.editor;
 
-import java.util.Map;
+import java.util.ArrayList;
 
 public class Memento {
-    private Map<String, Object> state;
+    private ArrayList<String> state;
 
-    public Memento(Map<String, Object> state){
-        this.state = state;
+    public Memento(ArrayList<String> documentLines){
+        this.state = documentLines;
     }
 
-    public Map<String, Object> getState(){
+    public ArrayList<String> getState(){
         return this.state;
     }
 }
